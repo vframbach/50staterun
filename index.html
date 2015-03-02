@@ -77,9 +77,16 @@
     <script src="/js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $(function(){
-        var visitedColor = '#66C2A5';
-        var unvisitedColor = '#FC8D62';
-        var upcomingColor = '#4040F0'
+        var mustardish = '#eddb82';
+        var grayish = '#c2c2c2';
+        var darkteal = '#55868c';
+        var kellygreen = '#79b791';
+        var lightgreen = '#abd1b5';
+        var blue = '#71b1ba';
+
+        var visitedColor = blue;
+        var unvisitedColor = lightgreen;
+        var upcomingColor = mustardish;
         var completedStates = [
             'CA', 'CO', 'DE', 'FL', 'KY',
             'PA', 'ME', 'MA', 'MD', 'MT',
@@ -116,7 +123,10 @@
               attribute: 'fill'
             }]
           },
-          backgroundColor: 'rgba(255,255,255,0)'
+          backgroundColor: 'rgba(255,255,255,0)',
+          zoomOnScroll: false,
+          panOnDrag: false,
+          zoomMax: 1,
         });
         map.series.regions[0].setValues(generateColors());
         $('#update-colors-button').click(function(e){

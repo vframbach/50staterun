@@ -16,6 +16,7 @@
  <link rel="stylesheet" href="/css/jquery-jvectormap-2.0.1.css" type="text/css" media="screen"/>
     <!-- Custom styles for this template -->
     <link href="/css/jumbotron.css" rel="stylesheet">
+    <link href="/css/mapstyle.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -119,9 +120,20 @@
           map: 'us_aea_en',
           container: $('#map'),
           series: {
-            regions: [{
-              attribute: 'fill'
-            }]
+            regions: [
+              {
+                attribute: 'fill'
+              },
+              {
+                scale: {
+                  Completed: visitedColor,
+                  Upcoming: upcomingColor,
+                  Todo: unvisitedColor
+                },
+                attribute: 'fill',
+                legend: {vertical:true}
+              }
+            ]
           },
           backgroundColor: 'rgba(255,255,255,0)',
           zoomOnScroll: false,

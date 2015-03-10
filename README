@@ -1,0 +1,16 @@
+Local server:
+
+    cd ~/statemap #navigate to project directory
+    python -m SimpleHTTPServer #start server at localhost:8000
+
+Stop server:
+
+    control+c
+
+Save and publish:
+
+    git status #doublecheck edits
+    git add . #stages edits
+    git commit -m "Things I changed" #edit the message
+    git push origin master #uploads to github
+

@@ -25,162 +25,454 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style type="text/css">
-    body {padding-top: 70px;
-    }
+    <style>
+      .blog-post[id] {
+        padding-top: 50px;
+      }
     </style>
   </head>
 
   <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li class="active"><a href="#">About me</a></li>
-      </ul>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutme.html">About me</a></li>
+          <li class="active"><a href="#">Marathon stories</a></li>
+        </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <h1>Hello, world!</h1>
-      <div class="row"> 
-        <div class="col-md-12">
-          <ul class="list-inline">
-            <li><a href="#AL">AL</a></li>
-            <li><a href="#AK">AK</a></li>
-            <li><a href="#AZ">AZ</a></li>
-            <li><a href="#AR">AR</a></li>
-            <li><a href="#CA">CA</a></li>
-            <li><a href="#CO">CO</a></li>
-            <li><a href="#CT">CT</a></li>
-            <li><a href="#DE">DE</a></li>
-            <li><a href="#FL">FL</a></li>
-            <li><a href="#GA">GA</a></li>
-            <li><a href="#HI">HI</a></li>
-            <li><a href="#ID">ID</a></li>
-            <li><a href="#IL">IL</a></li>
-            <li><a href="#IN">IN</a></li>
-            <li><a href="#IA">IA</a></li>
-            <li><a href="#KS">KS</a></li>
-            <li><a href="#KY">KY</a></li>
-            <li><a href="#LA">LA</a></li>
-            <li><a href="#ME">ME</a></li>
-            <li><a href="#MD">MD</a></li>
-            <li><a href="#MA">MA</a></li>
-            <li><a href="#MI">MI</a></li>
-            <li><a href="#MN">MN</a></li>
-            <li><a href="#MS">MS</a></li>
-            <li><a href="#MO">MO</a></li>
-            <li><a href="#MT">MT</a></li>
-            <li><a href="#NE">NE</a></li>
-            <li><a href="#NV">NV</a></li>
-            <li><a href="#NH">NH</a></li>
-            <li><a href="#NJ">NJ</a></li>
-            <li><a href="#NM">NM</a></li>
-            <li><a href="#NY">NY</a></li>
-            <li><a href="#NC">NC</a></li>
-            <li><a href="#ND">ND</a></li>
-            <li><a href="#OH">OH</a></li>
-            <li><a href="#OK">OK</a></li>
-            <li><a href="#OR">OR</a></li>
-            <li><a href="#PA">PA</a></li>
-            <li><a href="#RI">RI</a></li>
-            <li><a href="#SC">SC</a></li>
-            <li><a href="#SD">SD</a></li>
-            <li><a href="#TN">TN</a></li>
-            <li><a href="#TX">TX</a></li>
-            <li><a href="#UT">UT</a></li>
-            <li><a href="#VT">VT</a></li>
-            <li><a href="#VA">VA</a></li>
-            <li><a href="#WA">WA</a></li>
-            <li><a href="#WV">WV</a></li>
-            <li><a href="#WI">WI</a></li>
-            <li><a href="#WY">WY</a></li>
-          </ul>
-        </div>
+    <h1>About my marathons</h1>
+    <div class="row"> 
+      <div class="col-md-12">
+        <ul class="list-inline">
+          <li><a href="#AL">AL</a></li>
+          <li><a href="#AK">AK</a></li>
+          <li><a href="#AZ">AZ</a></li>
+          <li><a href="#AR">AR</a></li>
+          <li><a href="#CA">CA</a></li>
+          <li><a href="#CO">CO</a></li>
+          <li><a href="#CT">CT</a></li>
+          <li><a href="#DE">DE</a></li>
+          <li><a href="#FL">FL</a></li>
+          <li><a href="#GA">GA</a></li>
+          <li><a href="#HI">HI</a></li>
+          <li><a href="#ID">ID</a></li>
+          <li><a href="#IL">IL</a></li>
+          <li><a href="#IN">IN</a></li>
+          <li><a href="#IA">IA</a></li>
+          <li><a href="#KS">KS</a></li>
+          <li><a href="#KY">KY</a></li>
+          <li><a href="#LA">LA</a></li>
+          <li><a href="#ME">ME</a></li>
+          <li><a href="#MD">MD</a></li>
+          <li><a href="#MA">MA</a></li>
+          <li><a href="#MI">MI</a></li>
+          <li><a href="#MN">MN</a></li>
+          <li><a href="#MS">MS</a></li>
+          <li><a href="#MO">MO</a></li>
+          <li><a href="#MT">MT</a></li>
+          <li><a href="#NE">NE</a></li>
+          <li><a href="#NV">NV</a></li>
+          <li><a href="#NH">NH</a></li>
+          <li><a href="#NJ">NJ</a></li>
+          <li><a href="#NM">NM</a></li>
+          <li><a href="#NY">NY</a></li>
+          <li><a href="#NC">NC</a></li>
+          <li><a href="#ND">ND</a></li>
+          <li><a href="#OH">OH</a></li>
+          <li><a href="#OK">OK</a></li>
+          <li><a href="#OR">OR</a></li>
+          <li><a href="#PA">PA</a></li>
+          <li><a href="#RI">RI</a></li>
+          <li><a href="#SC">SC</a></li>
+          <li><a href="#SD">SD</a></li>
+          <li><a href="#TN">TN</a></li>
+          <li><a href="#TX">TX</a></li>
+          <li><a href="#UT">UT</a></li>
+          <li><a href="#VT">VT</a></li>
+          <li><a href="#VA">VA</a></li>
+          <li><a href="#WA">WA</a></li>
+          <li><a href="#WV">WV</a></li>
+          <li><a href="#WI">WI</a></li>
+          <li><a href="#WY">WY</a></li>
+        </ul>
       </div>
-    
-      <div class="row">
+    </div>
+  
+    <div class="row">
 
-        <div class="col-sm-8 blog-main">
+      <div class="col-sm-8 blog-main">
 
-          <div class="blog-post" id="NY">
-            <h2 class="blog-post-title">New York</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-          </div><!-- /.blog-post -->
+        <div class="blog-post" id="AL">
+          <h2 class="blog-post-title">Alabama</h2>
+          <p class="blog-post-meta">Tue Jun 26 1984 01:06:16 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
 
-          <div class="blog-post" id="PA">
-            <h2 class="blog-post-title">Pennsylvania</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
 
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          </div><!-- /.blog-post -->
+        <div class="blog-post" id="AK">
+          <h2 class="blog-post-title">Alaska</h2>
+          <p class="blog-post-meta">Thu Jun 06 1974 10:14:00 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
 
-          <div class="blog-post" id="CA">
-            <h2 class="blog-post-title">California</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
+        <div class="blog-post" id="AZ">
+          <h2 class="blog-post-title">Arizona</h2>
+          <p class="blog-post-meta">Tue Dec 16 1975 16:54:54 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
 
-        </div><!-- /.blog-main -->
-      </div><!-- /.row -->
+
+        <div class="blog-post" id="AR">
+          <h2 class="blog-post-title">Arkansas</h2>
+          <p class="blog-post-meta">Fri Jul 09 1993 23:09:20 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="CA">
+          <h2 class="blog-post-title">California</h2>
+          <p class="blog-post-meta">Fri Nov 14 1980 01:01:10 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="CO">
+          <h2 class="blog-post-title">Colorado</h2>
+          <p class="blog-post-meta">Mon Sep 25 1972 05:42:54 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="CT">
+          <h2 class="blog-post-title">Connecticut</h2>
+          <p class="blog-post-meta">Fri Apr 18 1980 13:56:03 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="DE">
+          <h2 class="blog-post-title">Delaware</h2>
+          <p class="blog-post-meta">Fri Aug 04 1989 09:23:27 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="FL">
+          <h2 class="blog-post-title">Florida</h2>
+          <p class="blog-post-meta">Fri Jul 07 2000 18:51:34 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="GA">
+          <h2 class="blog-post-title">Georgia</h2>
+          <p class="blog-post-meta">Tue Feb 27 1979 09:09:51 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="HI">
+          <h2 class="blog-post-title">Hawaii</h2>
+          <p class="blog-post-meta">Tue Jan 11 1983 00:39:23 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="ID">
+          <h2 class="blog-post-title">Idaho</h2>
+          <p class="blog-post-meta">Mon Oct 06 1986 08:11:05 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="IL">
+          <h2 class="blog-post-title">Illinois</h2>
+          <p class="blog-post-meta">Wed May 29 1996 23:08:21 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="IN">
+          <h2 class="blog-post-title">Indiana</h2>
+          <p class="blog-post-meta">Tue Jan 16 2001 01:11:39 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="IA">
+          <h2 class="blog-post-title">Iowa</h2>
+          <p class="blog-post-meta">Tue Feb 01 2000 23:33:53 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="KS">
+          <h2 class="blog-post-title">Kansas</h2>
+          <p class="blog-post-meta">Fri Sep 15 1972 10:01:57 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="KY">
+          <h2 class="blog-post-title">Kentucky</h2>
+          <p class="blog-post-meta">Wed Jun 03 1981 00:19:11 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="LA">
+          <h2 class="blog-post-title">Louisiana</h2>
+          <p class="blog-post-meta">Tue Apr 17 2001 08:12:10 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="ME">
+          <h2 class="blog-post-title">Maine</h2>
+          <p class="blog-post-meta">Mon Sep 20 1971 22:09:36 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MD">
+          <h2 class="blog-post-title">Maryland</h2>
+          <p class="blog-post-meta">Mon Mar 24 1997 00:16:50 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MA">
+          <h2 class="blog-post-title">Massachusetts</h2>
+          <p class="blog-post-meta">Fri Sep 22 2000 20:15:45 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MI">
+          <h2 class="blog-post-title">Michigan</h2>
+          <p class="blog-post-meta">Mon Sep 10 1979 07:25:10 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MN">
+          <h2 class="blog-post-title">Minnesota</h2>
+          <p class="blog-post-meta">Thu Jun 20 1974 09:31:59 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MS">
+          <h2 class="blog-post-title">Mississippi</h2>
+          <p class="blog-post-meta">Wed Nov 26 1997 07:34:15 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MO">
+          <h2 class="blog-post-title">Missouri</h2>
+          <p class="blog-post-meta">Mon Aug 29 1983 00:42:55 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="MT">
+          <h2 class="blog-post-title">Montana</h2>
+          <p class="blog-post-meta">Thu Apr 16 1998 06:28:58 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NE">
+          <h2 class="blog-post-title">Nebraska</h2>
+          <p class="blog-post-meta">Thu Sep 09 1971 21:40:20 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NV">
+          <h2 class="blog-post-title">Nevada</h2>
+          <p class="blog-post-meta">Wed Nov 13 1985 21:17:51 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NH">
+          <h2 class="blog-post-title">New Hampshire</h2>
+          <p class="blog-post-meta">Fri Feb 29 1980 11:52:51 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NJ">
+          <h2 class="blog-post-title">New Jersey</h2>
+          <p class="blog-post-meta">Sat Dec 03 1977 19:49:20 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NM">
+          <h2 class="blog-post-title">New Mexico</h2>
+          <p class="blog-post-meta">Tue Feb 08 1983 12:06:30 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NY">
+          <h2 class="blog-post-title">New York</h2>
+          <p class="blog-post-meta">Sun Sep 24 1995 08:17:50 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="NC">
+          <h2 class="blog-post-title">North Carolina</h2>
+          <p class="blog-post-meta">Sun Jul 10 1988 23:54:14 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="ND">
+          <h2 class="blog-post-title">North Dakota</h2>
+          <p class="blog-post-meta">Wed Oct 10 1984 17:55:55 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="OH">
+          <h2 class="blog-post-title">Ohio</h2>
+          <p class="blog-post-meta">Sat Aug 13 1983 14:38:05 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="OK">
+          <h2 class="blog-post-title">Oklahoma</h2>
+          <p class="blog-post-meta">Wed Sep 25 1996 11:50:19 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="OR">
+          <h2 class="blog-post-title">Oregon</h2>
+          <p class="blog-post-meta">Tue Aug 04 1987 18:55:57 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="PA">
+          <h2 class="blog-post-title">Pennsylvania</h2>
+          <p class="blog-post-meta">Sat Feb 19 2000 10:24:41 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="RI">
+          <h2 class="blog-post-title">Rhode Island</h2>
+          <p class="blog-post-meta">Thu Jul 01 1976 15:56:07 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="SC">
+          <h2 class="blog-post-title">South Carolina</h2>
+          <p class="blog-post-meta">Sun Sep 27 1981 08:41:25 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="SD">
+          <h2 class="blog-post-title">South Dakota</h2>
+          <p class="blog-post-meta">Fri Mar 14 1980 01:23:44 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="TN">
+          <h2 class="blog-post-title">Tennessee</h2>
+          <p class="blog-post-meta">Fri Aug 13 1982 14:04:48 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="TX">
+          <h2 class="blog-post-title">Texas</h2>
+          <p class="blog-post-meta">Fri May 31 1974 08:23:08 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="UT">
+          <h2 class="blog-post-title">Utah</h2>
+          <p class="blog-post-meta">Sat Mar 14 1987 07:17:36 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="VT">
+          <h2 class="blog-post-title">Vermont</h2>
+          <p class="blog-post-meta">Fri Jul 03 1981 08:16:53 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="VA">
+          <h2 class="blog-post-title">Virginia</h2>
+          <p class="blog-post-meta">Sun Jan 05 1975 04:53:57 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="WA">
+          <h2 class="blog-post-title">Washington</h2>
+          <p class="blog-post-meta">Thu Jun 13 1991 22:34:12 GMT-0700 (PDT)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="WV">
+          <h2 class="blog-post-title">West Virginia</h2>
+          <p class="blog-post-meta">Thu Dec 03 1998 04:31:55 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="WI">
+          <h2 class="blog-post-title">Wisconsin</h2>
+          <p class="blog-post-meta">Fri Feb 07 1992 22:53:25 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+
+        <div class="blog-post" id="WY">
+          <h2 class="blog-post-title">Wyoming</h2>
+          <p class="blog-post-meta">Thu Nov 16 1989 20:31:50 GMT-0800 (PST)</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+
+      </div><!-- /.blog-main -->
+    </div><!-- /.row -->
 
 
     <!-- Bootstrap core JavaScript

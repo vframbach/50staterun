@@ -1,3 +1,11 @@
 .jvectormap-zoomin, .jvectormap-zoomout {
 	display: none;
 }
+.jvectormap-legend-cnt-v .jvectormap-legend {
+	right: -97px;
+  	position: absolute;
+  	width: 88px;
+}
+.jvectormap-container {
+	overflow: visible;
+}

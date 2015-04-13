@@ -55,7 +55,7 @@
 </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <h1>Hello, world!</h1>
+    <h1>My quest to run marathons in all 50 states</h1>
     <div class="jumbotron">
       <div class="container">
         
@@ -88,24 +88,49 @@
         var visitedColor = blue;
         var unvisitedColor = lightgreen;
         var upcomingColor = mustardish;
-        var completedStates = [
-            'CA', 'CO', 'DE', 'FL', 'KY',
-            'PA', 'ME', 'MA', 'MD', 'MT',
-            'VA', 'SC', 'TX', 'IN', 'OH',
-            'IL', 'MI', 'ID', 'NY', 'NJ',
-            'WA', 'OR', 'NV', 'TN'
-        ].map(function(state){return 'US-'+state});
-        var upcomingStates = ['VT', 'WY'].map(function(state){return 'US-'+state});
+
+        var completedStates = {
+          'CA': "San Francisco Marathon",
+          'CO': "Pikes Peak Marathon",
+          'DE': "Run for the First Descents",
+          'FL': "Disney World Marathon",
+          'ID': "City of Trees",
+          'IL': "Chicago Marathon",
+          'IN': "Monumental Marathon",
+          'KY': "Hatfield McCoy Reunion Marathon",
+          'MA': "Boston Marathon",
+          'MD': "Baltimore Marathon",
+          'ME': "Maine Marathon",
+          'MI': "Detroit Marathon",
+          'MT': "Missoula Marathon",
+          'NJ': "Ocean Drive Marathon",
+          'NV': "Cal-Neva Tahoe Marathon",
+          'NY': "New York City Marathon",
+          'OH': "Rite Aid Cleveland Marathon",
+          'OR': "Crater Lake Rim Run",
+          'PA': "Philadelphia Marathon<br>Pocono Run for the Red Marathon<br>Steamtown Marathon",
+          'SC': "Columbia Marathon",
+          'TN': "Nashville Country Music Marathon",
+          'TX': "Houston Marathon",
+          'VA': 'Marine Corps Marathon',
+          'WA': "Whidbey Island Marathon"
+        };
+
+        var upcomingStates = {
+          'VT': "Vermont City Marathon 5/24/15",
+          'WY': "Jackson Hole Marathon 9/5/15"
+        };
             
         generateColors = function(){
               var colors = {},
                   key;
 
               for (key in map.regions) {
-                if (completedStates.indexOf(key) !== -1) {
+                var state = key.slice(-2);
+                if (completedStates[state]) {
                   colors[key] = visitedColor;
                 }
-                else if (upcomingStates.indexOf(key) !== -1) {
+                else if (upcomingStates[state]) {
                   colors[key] = upcomingColor;
                 }
                 else {
@@ -128,12 +153,22 @@
                 scale: {
                   Completed: visitedColor,
                   Upcoming: upcomingColor,
-                  Todo: unvisitedColor
+                  Future: unvisitedColor
                 },
                 attribute: 'fill',
                 legend: {vertical:true}
+
               }
             ]
+          },
+          onRegionTipShow: function(e, el, code) {
+            var state = code.slice(-2);
+            if (completedStates[state]) {
+              el.html(el.html()+'<br><br>'+completedStates[state]);
+            }
+            if (upcomingStates[state]) {
+              el.html(el.html()+'<br><br>'+upcomingStates[state]);
+            }
           },
           backgroundColor: 'rgba(255,255,255,0)',
           zoomOnScroll: false,

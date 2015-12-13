@@ -1,6 +1,6 @@
 ## My progress towards running marathons in all 50 states
 
-![](image.)
+![Map screenshot](image.jpg)
 
 * Current features:
 	* Clickable, color-coded map that shows which states I've run in or plan to run in soon

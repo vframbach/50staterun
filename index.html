@@ -12,10 +12,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
- <link rel="stylesheet" href="css/jquery-jvectormap-2.0.1.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.1.css" type="text/css" media="screen"/>
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
     <link href="css/mapstyle.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,9 +47,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="aboutme.html">About</a></li>
         <li><a href="marathons.html">Marathons</a></li>
-        <li><a href="advice.html">Running advice</a></li>
+        <li><a href="advice.html">Advice</a></li>
       </ul>
       
     </div><!-- /.navbar-collapse -->
@@ -56,11 +57,9 @@
 </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <h1 style="padding-left: 20px">My adventures in running marathons in all 50 states</h1>
-    <div class="jumbotron" style="background-color:transparent">
       <div class="container">
-        
-        <div id="map" style="width: 800px; height: 500px; margin:0 auto"></div>
+        <h1 class="title">My progress in running marathons in all 50 states</h1>
+        <div id="map"></div>
       
       </div>
     </div>
@@ -91,6 +90,7 @@
         var upcomingColor = mustardish;
 
         var completedStates = {
+          'AZ': "IMS Arizona Marathon",
           'CA': "San Francisco Marathon",
           'CO': "Pikes Peak Marathon",
           'DE': "Run for the First Descents",
@@ -121,8 +121,8 @@
         };
 
         var upcomingStates = {
-          'AZ': "The Arizona Marathon 2/14/16",
-          'GA': "Albany Marathon 3/5/16"
+          'GA': "Albany Marathon 3/5/16",
+          'HI': "Honolulu Marathon 12/11/16"
         };
             
         generateColors = function(){

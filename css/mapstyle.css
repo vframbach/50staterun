@@ -9,3 +9,28 @@
 .jvectormap-container {
 	overflow: visible;
 }
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#map {
+	width: 800px; 
+	height: 500px; 
+	margin:0 auto;
+}
+
+.jumbotron {
+	background-color:transparent;
+}
+
+#blog-post {
+    padding-top: 50px;
+}
+
+.athlinksFrame {
+	height: 500px;
+	width: 500px;
+	resize: both;
+	overflow: auto;
+}

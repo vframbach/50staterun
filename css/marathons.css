@@ -1,0 +1,6 @@
+.navbar-fixed-top + .content-container {
+	margin-top: 70px;
+}
+.content-container {
+	margin: 0 130px;
+}
